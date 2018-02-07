@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper,ngerman]{article}
+
+% IMPORTS
+\usepackage[ngerman]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes} % To-Dos
+\usepackage{parskip} 	% Absätze ohne Einrückungen
+\usepackage{mathtools} 	% Für Pfeil mit Erklärung
+\usepackage{amsfonts} 	% Buchstaben mit Doppelstrich
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}		
+\usepackage{bbm}			% Indikator Funktion
+\usepackage{verbatim}	% comment-env
+\usepackage{wasysym}		% \lightning
+\usepackage{graphicx}	% Einbinden von Grafiken
+\usepackage{url}
+\usepackage{hyperref}
+
+% META
+\date{07.02.2018}
+\author{Maximilian Reif}
+\title{Notizen zur Einführung in die Stochastik}
+
+%--------------------------------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{titlepage}
+    \ \newline\newline\newline\newline\newline
+	
+	\begin{center}
+
+		\huge Notizen zu\\
+		\Huge\textbf{Einführung in die Stochastik}\\
+		\huge bei Prof. Kaiser im WS 17/17\\
+		\normalsize
+
+		\vspace{1cm}
+		\begin{tabular}[b]{l|l}
+			\textbf{author} 		& Maximilian Reif
+			\texttt{\href{mailto:reifmaxi@fim.uni-passau.de}
+			{<reifmaxi@fim.uni-passau.de>}}\\
+			\textbf{last change}	& \today \\
+			\textbf{version} 	& 0.0.1\\
+			\textbf{github} 		& \url{https://github.com/lordreif/stochastik}
+		\end{tabular}
+		\vspace{1cm}
+		
+	\end{center}
+	
+	\begin{figure}[b]
+	\centering
+	\includegraphics[width=0.6\textwidth]{img/fim.png}
+	\end{figure}
+	
+\end{titlepage}
+
+%\include{sections/00-annotation}
+
+\newpage
+%\tableofcontents\thispagestyle{empty}
+\newpage
+
+\setcounter{page}{1}
+\include{sections/01-basics}
+%\include{sections/02-zufallsvariablen}
+%\include{sections/03-erwart_var}
+%\include{sections/04-grenzwert}
+
+\end{document}
