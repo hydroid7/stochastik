@@ -1,0 +1,39 @@
+\section{Zufallsvariablen}
+$X:\Omega\to\R$ ist \textbf{reellwertige Zufallsvariable}, wenn
+\[\forall I \text{ Intervall}: \{\omega\in\Omega\mid X(\omega)\in I\}\in\A.\]
+$X:\Omega\to\R^d$ ist \textbf{reellwertiger Zufallsvektor}, wenn jede Komponente Zufallsvariable ist.\\
+\ \newline
+Nützlich hierbei:\\
+$\forall x\in\R:\{X\leq x\}\in\A
+\Leftrightarrow\forall I \text{ Intervall}:\{X\in I\}\in\A$\\
+\ \newline
+\textbf{Verteilungsfunktion}: $\F_X:\R\to[0,1],\ x\mapsto\P(\{X\leq x\})$\\
+ist monoton wachsend, rechtsseitig stetig,$\lim\limits_{x\to\infty}\P(x)=1$,
+$\lim\limits_{x\to -\infty}\P(x)=0$, $\F_X(x)-\F_X(x\mathunderscore)=\P(\{X=x\})$\\
+\ \newline
+\textbf{Verteilung}: $\P_X: \B{d}\to [0,1],\ B\mapsto\P(\{X\in B\})$\\
+ist W'Maß auf $\B{d}$\\
+\ \newline\newline
+
+\begin{table}[h]
+\centering
+%\caption{Vergleich}
+\begin{tabular}{p{0.5\linewidth} p{0.5\linewidth}}
+\textbf{diskret} & \textbf{absolut stetig} \\
+\multicolumn{2}{c}{\textit{Definition}}  \\
+$X$ diskret, wenn $\P(\{X\in D\})=1$ für abzählbares $D\subset\R$ (kleinstes solches $D=:D_X$ heißt Träger von $X$.) & \\
+Dann existiert Wahrscheinlichkeitsfunktion:
+\[f_X:D_X\to [0,1],\ x\mapsto \P(\{X=x\})\] &        
+$X$ absolut stetig, wenn $\P_X$ Dichte $f_X$ besitzt\\
+\multicolumn{2}{c}{\textit{Verteilungsfunktion}}  \\
+$\F_X(x)=\sum\limits_{y\in D_X\cap (-\infty, x]} \P(\{X=y\})$ &
+$\F_X(x)=\int\limits_{(-\infty,x]}f_X(y) d\lambda(y)$ \\
+\multicolumn{2}{c}{\textit{Verteilung}}  \\
+$\P_X(A)=\sum\limits_{x\in D_X\cap A} \P(\{X=x\})$ &
+$\P_X(A)=\int\limits_{A} f_X(x) d\lambda(x)$ \\
+        &               
+\end{tabular}
+\end{table}
+
+
+
