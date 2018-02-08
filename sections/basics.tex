@@ -1,7 +1,6 @@
 \section{Basics}
 
 \begin{itemize}
-
 \item \mbox{\textbf{Ergebnis:} Element aus $\Omega$, 
 \textbf{Ereignis: } Element aus $\A$ (Teilmenge von $\Omega$)}
 
@@ -17,13 +16,14 @@
 	\item $\P(\Omega)=1$
 	\item $A_1,A_2;\ldots\in\A$ \underline{p.d.} 
 	$\Rightarrow \P(\bigcup_{i=1}^{\infty} A_i)
-	= \sum_{i=1}^{\infty}\P(A_i)$ \quad\textbf{($\sigma$-Additivität)}
+	= \sum_{i=1}^{\infty}\P(A_i)$ \hfill\textbf{($\sigma$-Additivität)}
 	\end{enumerate}
 
 \item $A,B\in\A:$
 	\begin{enumerate}
 	\item $A\subset B \Rightarrow \P(B)=\P(A)+\P(B\backslash A)$
-	\item $A\subset B \Rightarrow \P(A)\leq\P(B)$ \qquad\textbf{(Monotonie des W'Maßes)}
+	\item $A\subset B \Rightarrow \P(A)\leq\P(B)$
+	\hfill\textbf{(Monotonie des W'Maßes)}
 	\item $\P(A^{\text{C}})=1-\P(A)$
 	\item $\P(A\cup B) = \P(A)+\P(B)-\P(A\cap B)$
 	\end{enumerate}
@@ -31,13 +31,13 @@
 \item $A_1,A_2,\ldots\in\A$
 	\begin{enumerate}
 	\item $\P(\bigcup_{i=1}^{\infty} A_i)\leq\sum_{i=1}^{\infty} \P(A_i)$ 
-	\qquad\textbf{($\sigma$-Subadditivität)}
+	\hfill\textbf{($\sigma$-Subadditivität)}
 	\item $A_1\subset A_2\subset\ldots \Rightarrow 
 	\P(\bigcup_{i=1}^{\infty} A_i)=\lim\limits_{i\to\infty} \P(A_i)$
-	\mbox{(\textbf{$\sigma$-Stetigkeit von oben})}
+	\hfill\mbox{(\textbf{$\sigma$-Stetigkeit von oben})}
 	\item $A_1 \supset A_2\supset\ldots \Rightarrow
 	\P(\bigcap_{i=1}^{\infty} A_i)=\lim\limits_{i\to\infty} \P(A_i)$
-	\mbox{(textbf{$\sigma$-Stetigkeit von unten})}
+	\hfill\mbox{(\textbf{$\sigma$-Stetigkeit von unten})}
 	\end{enumerate}
 
 \item $\P(B)>0$, dann $\P(\ \cdot\mid B) := \frac{\P(\ \cdot\ \cap B)}{\P(B)}$
