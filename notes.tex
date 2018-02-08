@@ -14,17 +14,22 @@
 \usepackage{verbatim}	% comment-env
 \usepackage{wasysym}		% \lightning
 \usepackage{graphicx}	% Einbinden von Grafiken
+\usepackage[left=3cm,right=3cm,top=3cm,bottom=3.5cm,includeheadfoot]{geometry}
 \usepackage{url}
 \usepackage{hyperref}
 
 % NEWCOMMANDS
 \newcommand{\A}{\mathcal{A}}
-\newcommand{\compl}[1]{{#1}^{\text{\tiny C}}}
+\newcommand{\B}[1]{\mathcal{B}_{#1}}
 \renewcommand{\P}{\operatorname{P}}
 \newcommand{\F}{\operatorname{F}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\E}{\operatorname{E}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\N}{\mathbb{N}}
-\newcommand{\B}[1]{\mathcal{B}_{#1}}
+\newcommand{\1}{\mathbbm{1}}
+\newcommand{\compl}[1]{{#1}^{\text{\tiny C}}}
+\newcommand{\U}{\texttt{(Übung)}}
 
 % META
 \date{07.02.2018}
@@ -42,7 +47,7 @@
 
 		\huge Notizen zu\\
 		\Huge\textbf{Einführung in die Stochastik}\\
-		\huge bei Prof. Kaiser im WS 17/17\\
+		\huge bei Prof. Kaiser im WS 17/18\\
 		\normalsize
 
 		\vspace{1cm}
@@ -50,8 +55,8 @@
 			\textbf{author} 		& Maximilian Reif
 			\texttt{\href{mailto:reifmaxi@fim.uni-passau.de}
 			{<reifmaxi@fim.uni-passau.de>}}\\
-			\textbf{last change}	& \today \\
-			\textbf{version} 	& 0.0.1\\
+			\textbf{last change}	& 8. Feb 2018 \\
+			\textbf{version} 	& 0.0.3\\
 			\textbf{github} 		& \url{https://github.com/lordreif/stochastik}
 		\end{tabular}
 		\vspace{1cm}
@@ -65,7 +70,7 @@
 	
 \end{titlepage}
 
-%\include{sections/00-annotation}
+%\include{sections/disclaimer}
 
 \newpage
 %\tableofcontents\thispagestyle{empty}
@@ -75,8 +80,9 @@
 \include{sections/01-basics}
 %\include{sections(xx-integral}
 \include{sections/02-zufallsvariablen}
-%\include{sections/03-verteilungen}
+\include{sections/03-verteilungen}
 %\include{sections/04-erwart_var}
 %\include{sections/05-grenzwert}
+%\include{sections/sonstiges}
 
 \end{document}
