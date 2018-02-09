@@ -32,6 +32,9 @@ $D_X=\begin{cases}
 \end{cases}$
 
 \item $\E(X)=n\cdot p$, $\Var(X)=n\cdot p\cdot (1-p)$
+
+\item Anwendung: Zählen der Erfolge von $n$ unabhängigen, hintereinander ausgeführten
+Experimenten mit Erfolgswahrscheinlichkeit $p_n$
 \end{itemize}
 
 \textbf{Hypergeometrische Verteilung} $X\sim\mathbf{H}(N,N_0,n)$
@@ -41,6 +44,9 @@ $D_X=\begin{cases}
 
 \item diskret mit 
 $D_X=\{\operatorname{max}(0,n-(N-N_0)),\ldots,\operatorname{min}(N_0,n)\}$
+
+\item Anwendung: unter $N$ Objekten finden sich $N_0$ markierte und es werden
+$n$ entnommen
 \end{itemize}
 
 \textbf{Poisson-Verteilung} $X\sim\mathbf{P}(\lambda)$ für $\lambda>0$
@@ -53,6 +59,10 @@ $D_X=\{\operatorname{max}(0,n-(N-N_0)),\ldots,\operatorname{min}(N_0,n)\}$
 \Rightarrow X+Y\sim\mathbf{P}(\lambda_2 + \lambda_2)$ \U
 
 \item $\E(X)=\lambda=\Var(X)$, $\E(X^2)=\lambda^2+\lambda$
+
+\item Anwendung: Approximation von $\mathbf{B}(n,p)$ durch $\mathbf{P}(\lambda)$
+mit $\lambda=n\cdot p$ für 'große' $n$ und 'kleine' $p$, also Eintreffen eines
+seltenen Ereignis bei großer Anzahl an Wiederholungen
 \end{itemize}
 
 \textbf{Geometrische Verteilung} $X\sim\mathbf{G}(p)$ mit $p\in\textbf{(}0,1]$
@@ -64,7 +74,9 @@ $D_X=\{\operatorname{max}(0,n-(N-N_0)),\ldots,\operatorname{min}(N_0,n)\}$
 \item $\E(X)=\frac{1}{p}$, $\Var(X)=\frac{1-p}{p^2}$, $\E(X^2)=\frac{2-p}{p^2}$
 
 \item Gedächtnislos: $\forall k_1,k_2\in\N \text{ mit } k_1<k_2:
-\P(\{X>k_2\}\mid \{ X>k_2\}) = \P(\{X>k_2-k_1\})$\\
+\P(\{X>k_2\}\mid \{ X>k_1\}) = \P(\{X>k_2-k_1\})$
+
+\item Anwendung: diskretes Warten bis zum ersten Eintritt eines Ereignisses
 \end{itemize}
 
 \textbf{Gleichverteilung} $X\sim\mathbf{U}([a,b])$ mit $-\infty<a<b<\infty$
@@ -113,7 +125,10 @@ $f_X:\R\to [0,\infty],\ x\mapsto\begin{cases}
 \item $\E(X)=\frac{1}{\lambda}$, $\Var(X)=\frac{1}{\lambda^2}$,
 $\E(X^2)=\frac{2}{\lambda^2}$
 
-\item Gedächtnislos: $\forall s,t>0:\P(\{X>t+s\}\mid\{X>t\})=\P(\{X>s\})$\\
+\item Gedächtnislos: $\forall s,t>0:\P(\{X>t+s\}\mid\{X>t\})=\P(\{X>s\})$
+
+\item Anwendung: Warten bis zum ersten Eintritt eines Ereignisses (zB Lebensdauer,
+radioaktiver Zerfall,\ldots)
 \end{itemize}
 
 \textbf{Standard-Normalverteilung} $X\sim\mathbf{N}(0,1)$
