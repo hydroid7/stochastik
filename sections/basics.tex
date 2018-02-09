@@ -45,7 +45,7 @@ W'Maß auf $\A$ mit $\P(B\mid B)=1$
 
 \item \textbf{Formel der totalen Wahrscheinlichkeit}
 \[
-	B_1, B_2,\ldots \in\A \text{ \underline{p.d.} mit } \P(B_i)>0, 
+	B_1, B_2,\ldots \in\A \text{ \underline{p.d.} mit } \P(B_i)>0 \text{ und } 
 	\bigcup_{i=1}^{n} B_i = \Omega
 \]
 \[
@@ -55,7 +55,7 @@ W'Maß auf $\A$ mit $\P(B\mid B)=1$
 
 \item \textbf{Formel von Bayes}
 \[
-	B_1, B_2,\ldots \in\A \text{ \underline{p.d.} mit } \P(B_i)>0, 
+	B_1, B_2,\ldots \in\A \text{ \underline{p.d.} mit } \P(B_i)>0 \text{ und }  
 	\bigcup_{i=1}^{n} B_i = \Omega
 \]
 \[
@@ -90,8 +90,8 @@ speziell $|N^k| = {|N|}^k$
 \item \mbox{$n=|N|,k\leq n$, dann $|\{(\omega_1,\ldots,\omega_k)\in N^k 
 \mid\omega_i\neq\omega_j\text { für }i\neq j\}|=\frac{n!}{(n-k)!}$}
 
-\item $n=|N|,k\leq n$, dann $|\{K\subset N\mid |K|=k\}| = \binom{n}{k} =
-|\{(\omega_1,\ldots,\omega_k)\in N^k \mid 1\leq\omega_1<\ldots<\omega_k\leq n\}|$
+\item $n=|N|,k\leq n$, dann $|\{K\subset N\mid |K|=k\}| = \binom{n}{k} =$
+\mbox{$|\{(\omega_1,\ldots,\omega_k)\in N^k \mid 1\leq\omega_1<\ldots<\omega_k\leq n\}|$}
 
 \item $k,n\in\mathbb{N}$, dann 
 $|\{(\omega_1,\ldots,\omega_k)\in N^k\mid 1\leq\omega_1\leq\ldots\leq\omega_k\leq n\}|
@@ -104,7 +104,7 @@ $|\{(\omega_1,\ldots,\omega_k)\in N^k\mid 1\leq\omega_1\leq\ldots\leq\omega_k\le
 \begin{tabular}{l|l|l|}
 \cline{2-3}
                                        & \begin{tabular}[c]{@{}l@{}}Berücksichtigung\\ der Reihenfolge\end{tabular} & \begin{tabular}[c]{@{}l@{}}keine Berücksichtigung\\ der Reihenfolge\end{tabular}                                                                   \\ \hline
-\multicolumn{1}{|l|}{mit Zurücklegen}  & \begin{tabular}[c]{@{}l@{}}$\Omega=N^k$,\\ $|\Omega = n^k|$\end{tabular}   & \begin{tabular}[c]{@{}l@{}}$\Omega = \{\omega\in N^k\mid1\leq\omega_1\leq\ldots\leq\omega_n\leq n\}$,\\ $|\Omega| = \binom{n+k-1}{k}$\end{tabular} \\ \hline
+\multicolumn{1}{|l|}{mit Zurücklegen}  & \begin{tabular}[c]{@{}l@{}}$\Omega=N^k$,\\ $|\Omega| = n^k$\end{tabular}   & \begin{tabular}[c]{@{}l@{}}$\Omega = \{\omega\in N^k\mid1\leq\omega_1\leq\ldots\leq\omega_n\leq n\}$,\\ $|\Omega| = \binom{n+k-1}{k}$\end{tabular} \\ \hline
 \multicolumn{1}{|l|}{ohne Zurücklegen} & \begin{tabular}[c]{@{}l@{}}$\Omega=\{\omega\in N^k \mid \omega_i\neq\omega_j \text{ für } i\neq j\} $\\ $|\Omega|=\frac{n!}{(n-k)!}$\end{tabular}  & \begin{tabular}[c]{@{}l@{}}$\Omega=\{\omega\in N^k\mid 1\leq\omega_1<\ldots<\omega_k\leq n\}$,\\ $|\Omega|=\binom{n}{k}$\end{tabular}              \\ \hline
 \end{tabular}
 \end{table}

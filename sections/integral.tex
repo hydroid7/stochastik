@@ -8,7 +8,8 @@ $\lambda_d(\bigcup_{i=1}^{\infty} B_i)=\sum_{i=1}^{\infty}\lambda_d(B_i)$.
 \item Für $a_1,b_1,\ldots,a_n,b_n\in\R$:
 $\lambda_d([a_1,b_1]\times\cdots\times[a_n,b_n])=\prod_{i=1}^{d}(b_i-a_i)$.
 
-\item Für $a\in\R$, $Q\in\mathrm{O}(d)$, $A\in\B{d}$: $\lambda_d(a+Q(A))=\lambda_d(A)$
+\item Für $a\in\R^d$, $Q\in\mathrm{O}(d)$, $A\in\B{d}$: 
+$\lambda_d(a+Q(A))=\lambda_d(A)$
 
 \item $\forall x\in\R^d: \lambda_d(\{x\})=0$
 
@@ -40,7 +41,7 @@ $\mathcal{F}_d^+ :=\{f\in\mathcal{F}_d\mid f\geq 0\}$
 
 \item Abbildung $e:\R^d\to\overline{\R}$ \textit{elementar} $:\Leftrightarrow$\\
 $\exists b_1,\ldots,b_n\in\overline{\R}\wedge\exists B_1,\ldots,B_n\in\B{d}$
-\underline{p.d.} mit $e(x)=\sum_{i=1}^{n} b_i\cdot \1_{B_i}$ für alle $x\in\R^d$
+\underline{p.d.} mit $e(x)=\sum_{i=1}^{n} b_i\cdot \1_{B_i}(x)$ für alle $x\in\R^d$
 
 \item $\mathcal{E}_d:=\{f:\R^d\to\overline{\R}\mid f \text{ ist elementar}\}$,
 $\mathcal{E}_d^+:=\{f\in\mathcal{E}_d\mid f\geq 0\}$
@@ -74,13 +75,13 @@ $\Leftrightarrow \lambda_d(\{x\in\R^d\mid f(x)\neq g(x)\})=0$
 Für jede monoton wachsende Folge $0\leq f_1\leq f_2\leq\ldots$
 in $\mathcal{F}_d^+$ gilt
 \[\lim_{n\to\infty}\int f_n~d\lambda_d=
-\int\lim_{n\to\infty} f_n~d\lambda_n\in [0,\infty].\]
+\int\lim_{n\to\infty} f_n~d\lambda_d\in [0,\infty].\]
 
 \textbf{Satz von der dominierten Konvergenz}\\
 Für $f,f_1,f_2,\ldots\in\mathcal{F}_d$ mit $\lim_{n\to\infty} f_n=f$ 
 und $g\in\mathcal{F}_d$ integrierbar mit $|f_n|\leq g$ für alle $n\in\N$ gilt
 \[
-	\int fd\lambda_d=\lim_{n\to\inf} \int f_n~d\lambda_d.
+	\int fd\lambda_d=\lim_{n\to\infty} \int f_n~d\lambda_d.
 \]
 Insbesondere für $f\in\mathcal{F}_1$ integrierbar oder $f\in\mathcal{F}_1^+$
 \[
@@ -90,20 +91,20 @@ Insbesondere für $f\in\mathcal{F}_1$ integrierbar oder $f\in\mathcal{F}_1^+$
 
 \textbf{Satz von Fubini}\\
 Für $f\in\mathcal{F}_d$ integrierbar oder $f\in\mathcal{F}_d^+$ und
-$B = B_1\times\cdots\times B_n\subset\B{1}^d$ gilt
+$B = B_1\times\cdots\times B_d\subset\B{1}^d$ gilt
 \[
-	\int_B f~d\lambda_d=\int_{B_{i_1}}\cdots\int_{B_{i_d}} f(x_1,\ldots,x_n)
-	d\lambda(x_{i_d})\ldots d\lambda(x_{i_1})
+	\int_B f~d\lambda_d=\int_{B_{i_1}}\cdots\int_{B_{i_d}} f(x_1,\ldots,x_d)
+	d\lambda(x_{i_d})\cdots d\lambda(x_{i_1})
 \]
-für jede Permutation $(i_1,\ldots,i_d)$ von $(1,\ldots,n)$.
+für jede Permutation $(i_1,\ldots,i_d)$ von $(1,\ldots,d)$.
 
-\textbf{Substitutionsregel}\\
+\textbf{Substitutionsregel} (Riemann-Integration)\\
 Für $a,b\in\R$ mit $a<b$, $g:[a,b]\to I$ stetig diferenzierbar, $f:I\to\R$ stetig gilt
 \[
 	\int_a^b f(g(y))\cdot g'(y)dy=\int_{g(a)}^{g(b)}f(x)dx.
 \]
 
-\textbf{Partielle Integration}\\
+\textbf{Partielle Integration} (Riemann-Integration)\\
 Für $a,b\in\R$ mit $a<b$ und $f,g:[a,b]\to\R$ stetig differenzierbar gilt
 \[
 	\int_a^b f'(x)\cdot g(x)dx 

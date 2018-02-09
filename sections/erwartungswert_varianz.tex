@@ -4,9 +4,9 @@
 \begin{itemize}
 \item Diskretes $X$ mit Träger $D_X$ \textit{integrierbar}
 $:\Leftrightarrow \sum_{x\in D_X} |x|\cdot \P(\{X=x\})<\infty$\\
-Diskrete Zufallsvariablen mit \underline{endlichem} Träger sind immmer integrierbar
+Diskrete Zufallsvariablen mit \underline{endlichem} Träger sind immmer integrierbar!
 
-\item  Absolutstetige Zufallsvariable $X$ mit Dichte $f_X$ \textit{integrierbar}
+\item  Absolut stetige Zufallsvariable $X$ mit Dichte $f_X$ \textit{integrierbar}
 \mbox{$:\Leftrightarrow \int_\R |x|\cdot f_X(x)d\lambda(x)<\infty$}
 
 \item $\L_1:=\{X \text{ integrierbar}\}$ ist Vektorraum
@@ -20,7 +20,7 @@ $\E(X):= \int_\R x\cdot f_X~d\lambda(x)\in\R$
 \item Der Erwartungswert ist linear und monoton.
 
 \item \textbf{Transformationssatz}: Für $X$ $d$-dimensionaler Zufallsvektor diskret/
-absolut stetig, \mbox{$h:\R^d\to\R$ Borel-messbar} gilt
+absolut stetig und \mbox{$h:\R^d\to\R$ Borel-messbar} gilt
 \[
 	h(X)\in\L_1 \Leftrightarrow
 	\begin{cases}
@@ -47,7 +47,7 @@ $\E(X\cdot Y) = \E(X)\cdot \E(Y)$
 \begin{itemize}
 \item $X$ \textit{quadratisch integrierbar} $:\Leftrightarrow X^2\in\L_1$
 
-\item $\L_2:=\{X \text{ quadratisch integriebar}\}$ ist Untervektorraum von $\L_1$
+\item $\L_2:=\{X \text{ quadratisch integrierbar}\}$ ist Untervektorraum von $\L_1$
 
 \item Für $X$ diskret mit Träger $D_X$ bzw. absolut stetig mit Dichte $f_X$ gilt:
 \[
@@ -86,12 +86,12 @@ sowie
 \textbf{Kovarianz}
 \begin{itemize}
 \item Für $X,Y\in\L_2$ ist die \textit{Kovarianz} definiert durch
-$\Cov(X,Y)=\E((X-\E(X)\cdot (Y-\E(Y))))$
+\mbox{$\Cov(X,Y):=\E((X-\E(X)\cdot (Y-\E(Y))))$}
 
 \item Für $X,Y\in\L_2$ gilt $\Cov(X,Y)=\E(X\cdot X)-\E(X)\cdot\E(Y)$
 
-\item $X,Y$ heißen \textit{unkorreliert} wenn $\Cov(X,Y)=0$.\\
-Es gilt: $X,Y$ unabhängig $\Rightarrow X,Y$ unkorreliert
+\item $X,Y$ heißen \textit{unkorreliert} wenn $\Cov(X,Y)=0$.
+\mbox{Es gilt: $X,Y$ unabhängig $\Rightarrow X,Y$ unkorreliert}
 
 \item Für $X,Y$ mit $\Var(X),\Var(Y)>0$ ist
 \[

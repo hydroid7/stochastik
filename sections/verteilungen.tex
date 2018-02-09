@@ -52,7 +52,7 @@ $D_X=\{\operatorname{max}(0,n-(N-N_0)),\ldots,\operatorname{min}(N_0,n)\}$
 \item $\E(X)=\lambda=\Var(X)$, $\E(X^2)=\lambda^2+\lambda$
 \end{itemize}
 
-\textbf{Geometrische Verteilung} $X\sim\mathbf{G}(p)$ mit $p\in(0,1]$
+\textbf{Geometrische Verteilung} $X\sim\mathbf{G}(p)$ mit $p\in\textbf{(}0,1]$
 \begin{itemize}
 \item $\forall k\in\N:\P(\{X=k\})=p\cdot(1-p)^{k-1}$
 
@@ -66,7 +66,7 @@ $D_X=\{\operatorname{max}(0,n-(N-N_0)),\ldots,\operatorname{min}(N_0,n)\}$
 
 \textbf{Gleichverteilung} $X\sim\mathbf{U}([a,b])$ mit $-\infty<a<b<\infty$
 \begin{itemize}
-\item absstetig mit 
+\item absolut stetig mit 
 $f_X(x)=\begin{cases}
 \frac{1}{b-a} 	& \text{falls } x\in [a,b]	\\
 0				& \text{sonst }		
@@ -99,7 +99,7 @@ $\E(X^2)=\frac{b^3-a^3}{3(b-a)}$
 
 \textbf{Exponentialverteilung} $X\sim\mathbf{Exp}(\lambda)$ für $\lambda>0$
 \begin{itemize}
-\item absstetig mit
+\item absolut stetig mit
 $f_X:\R\to [0,\infty],\ x\mapsto\begin{cases}
 \lambda\cdot\exp(-\lambda x) 	& \text{falls } x\geq 0	\\
 0							& \text{sonst }		
@@ -115,8 +115,8 @@ $\E(X^2)=\frac{2}{\lambda^2}$
 
 \textbf{Standard-Normalverteilung} $X\sim\mathbf{N}(0,1)$
 \begin{itemize}
-\item absstetig mit $f_X:\R\to[0,\infty],\
-x\mapsto\frac{1}{\sqrt{2\pi\sigma^2}}\cdot\exp(-\frac{(x-\mu)^2)}{2\sigma^2})$
+\item absolut stetig mit $f_X:\R\to[0,\infty],\
+x\mapsto\frac{1}{\sqrt{2\pi}}\cdot\exp(-\frac{x^2}{2})$
 
 \item $\Phi(x):=\F_X(x)=
 \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{x}\exp(-\frac{y^2}{2})d\lambda(y)$
@@ -147,25 +147,23 @@ x\mapsto\frac{1}{\sqrt{2\pi\sigma^2}}\cdot\exp(-\frac{(x-\mu)^2)}{2\sigma^2})$
 \begin{itemize}
 \item $\forall x\in S: \P(\{X=x\})=\frac{1}{|S|}$
 
-\textbf{Gleichverteilung} (mehrdimensional) $X\sim\mathbf{U}(G)$ für $G\in\B{d}$
-\begin{itemize}
-\item absstetig mit $f_X=\frac{1}{\lambda_d(G)}\cdot \1_G$
-
 \item $\P_X(A)=\frac{\lambda_d(A\cap G)}{\lambda_d(G)}=
 \int_A \frac{1}{\lambda_d(G)\cdot 1_G(x)}d\lambda(x)$
 \end{itemize}
+
+\textbf{Gleichverteilung} (mehrdimensional) $X\sim\mathbf{U}(G)$ für $G\in\B{d}$
+\begin{itemize}
+\item absolut stetig mit $f_X=\frac{1}{\lambda_d(G)}\cdot \1_G$
 
 \item diskret mit $D_X=S$
 \end{itemize}
 
 \textbf{Standard-Normalverteilung} (mehrdimensional)
 \begin{itemize}
-\item absolutstetig mit 
+\item absolut stetig mit 
 $f_X:\R^d\to [0,\infty),\ 
 x\mapsto(2\pi)^{-d/2}\cdot\exp(-\frac{1}{2}\sum_{i=1}^{d}x_i^2)$
 
 \item $X=(X_1,\ldots,X_d)$ ist standard-normalverteilt 
 $\Leftrightarrow$ $X_1,\ldots,X_d\ \operatorname{i.i.d}\sim\mathbf{N}(0,1)$
 \end{itemize}
-
-%Einpunkt-Verteilung
