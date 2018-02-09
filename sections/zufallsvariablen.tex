@@ -1,13 +1,12 @@
 \section{Zufallsvariablen}
-\begin{itemize}
-\item \textbf{Reellwertige Zufallsvariable}\\
+\textbf{Reellwertige Zufallsvariable}\\
 $X:\Omega\to\R$ ist \textit{reellwertige Zufallsvariable}, wenn
 \[
 	\forall I \text{ Intervall}: \{\omega\in\Omega\mid X(\omega)\in I\}\in\A.
 \]
-Wenn $\A=\mathfrak{P}(\Omega)$, dann ist jedes $X:\Omega\to\R$ Zufallsvariable.\\
+Wenn $\A=\mathfrak{P}(\Omega)$, dann ist jedes $X:\Omega\to\R$ Zufallsvariable.
 
-\item \textbf{Verteilungsfunktion}\\
+\textbf{Verteilungsfunktion}\\
 Die \textit{Verteilungsfunktion}
 \[
 	\F_X:\R\to[0,1],\ x\mapsto\P(\{X\leq x\})
@@ -17,41 +16,41 @@ $\lim\limits_{x\to\infty}\P(x)=1$,
 $\lim\limits_{x\to -\infty}\P(x)=0$, 
 \mbox{$\F_X(x)-\F_X(x\textbf{-})=\P(\{X=x\})$}.
 
-\item \textbf{Reellwertiger Zufallsvektor}\\
+textbf{Reellwertiger Zufallsvektor}\\
 $X=(X_1,\ldots,X_d):\Omega\to\R^d$ ist \textit{reellwertiger Zufallsvektor}, wenn jede
 Komponente $X_{i\in\{1,\ldots,d\}}$ reellwertige Zufallsvariable ist. Es gilt:\\
 \[
 	X \text{ ist Zufallsvektor } \Leftrightarrow X \text{ ist Borel-messbar.}
 \]
 
-\item \textbf{Verteilung}\\
+\textbf{Verteilung}\\
 Die \textit{Verteilung} eines Zufallsvektors $X$: 
 \[
 	\P_X: \B{d}\to [0,1],\ B\mapsto\P(\{X\in B\})
 \]
 ist ein Wahrscheinlichkeitsmaß auf $\B{d}$.
 
-\item \textbf{Randverteilung}\\
+\textbf{Randverteilung}\\
 Zu einem Zufallsvektor $X=(X_1,\ldots,X_n)$ heißen ($i\in\{1,\ldots,d\}$)
 \[
 	\P_{X_i} :\B{1}\to[0,1],\ B\mapsto \P(\{X_i\in B\})
 \]
 die \textit{(eindimensionalen) Randverteilungen} von $X$.
 
-\item \textbf{Wahrscheinlichkeitsfunktion}\\
+\textbf{Wahrscheinlichkeitsfunktion}\\
 Eine Funktion $f:\Omega\to[0,\infty)$ heißt \textit{Wahrscheinlichkeitsfunktion} falls
 \[
 	  \sum_{\omega\in\Omega} f(\omega)=1
 \]
 für ein abzählbares $\Omega\in\R$.
 
-\item \textbf{Wahrscheinlichkeitsdichte}\\
+\textbf{Wahrscheinlichkeitsdichte}\\
 Eine Funktion $f\in\mathcal{F}_d^+$ heißt \textit{Wahrscheinlichkeitsdichte} falls
 \[
 	 \int_{\R^d} f(x)~d\lambda(x)=1.
 \]
 
-\item
+\textbf{Bedeutung von W'funktionen/-dichten}\\
 Wahrscheinlichkeitsfunktionen/-dichten definieren Wahrscheinlichkeitsmaß auf $\A$
 durch 
 \[
@@ -59,13 +58,12 @@ durch
 \]
 für $A\in\A$.
 
-\item
 Zu jeder Wahrscheinlichkeitsfunktion/-dichte $f$ gibt es $(\Omega,\A,\P)$ sodass
 darauf eine (diskrete/absolut stetige) Zufallsvariable $X$ mit $f_X=f$ existiert,
 daher definiert jedes Wahrscheinlichkeitsmaß $\P$ auf $\B{d}$ einen
 $d$-dimensionalen Zufallsvektor $X$ mit $\P_X=X$.
 
-\item \textbf{Diskrete Zufallsvariablen}\\
+\textbf{Diskrete Zufallsvariablen}\\
 Eine Zufallsvariable heißt \textit{diskret}, wenn $\P(\{X\in D\})$ für ein abzählbares
 $D\subset\R$ gilt. Das kleinste solche $D=:D_X$ heißt \textit{Träger} der
 Zufallsvariablen $X$.\\
@@ -73,7 +71,7 @@ Es gilt:
 $\underbrace{(\Omega,\A,\P) \text{ diskret}}_{\text{also $\Omega$ abzählbar}}$
 $\Rightarrow X(\Omega)$ abzählbar $\Rightarrow X$ diskret.
 
-\item \textbf{Diskrete Zufallsvektoren}\\
+\textbf{Diskrete Zufallsvektoren}\\
 Ein $d$-dimensionaler Zufallsvektor $X=(X_1,\ldots,X_d)$ heißt \textit{diskret},
 wenn es ein abzählbares $D\subset\R^d$ mit $\P(\{X\in D\})=1$ gibt.\\
 Dann ist $D_X=\{x\in\R^d\mid \P(\{X=x\})>0\}\neq D_{X_1}\times\cdots\times D_{X_d}$
@@ -81,11 +79,10 @@ der Träger von $X$.\\
 Es gilt: $X$ diskret $\Leftrightarrow\forall i\in\{1,\ldots,d\}: X_i$ diskret.\\
 Für $h:\R^d\to\R$ Borel-messbar ist $h(X)$ diskret mit $D_{h(X)}=h(D_X)$.
 
-\item \textbf{Absolut stetige Zufallsvektoren}\\
+\textbf{Absolut stetige Zufallsvektoren}\\
 Ein Zufallsvektor $X$ heißt \textit{absolut stetig verteilt} falls die Verteilung
 $\P_X$ eine Dichte $f_X$ besitzt.
 
-\item
 \textbf{Unabhängigkeit von Zufallsvariablen}\\
 Eine Folge $(X_i)_{i\in I}$ von Zufallsvariablen heißt \textit{unabhängig} wenn für
 jede Folge $(J_i)_{i\in I}$ von Intervallen die Folge der Ereignisse
@@ -105,7 +102,6 @@ Beachte auch \hyperlink{unabhaengig}{dieses}.
 
 Es gilt: $X,X$ unabhängig $\Leftrightarrow\exists c\in\R:\P(\{X=c\})=1$ \U
 
-\item 
 \textbf{Identische Verteilung}\\
 Zwei Zufallsvariablen $X,Y$ heißen \textit{identisch verteilt}, wenn $F_X=F_Y$.\\
 Zwei Zufallsvektoren $\tilde{X}=(\tilde{X}_1,\ldots,\tilde{X}_d),
@@ -114,55 +110,66 @@ $P_{\tilde{X}}=P_{\tilde{Y}}$.\\
 Es gilt $\tilde{X},\tilde{Y}$ identisch verteilt
 $\Rightarrow\forall i\in\{1,\ldots,d\}: \tilde{X}_i,\tilde{Y}_i$ identisch verteilt
 
-\end{itemize}
-
 \newpage
 \begin{table}[h]
 \centering
 \caption*{\textbf{Vergleich}}
 \begin{tabular}{P{0.45\linewidth} | P{0.45\linewidth}}
 \textbf{diskret} & \textbf{absolut stetig} \\
+
 \multicolumn{2}{c}{\textit{W'funktion/Dichte}}  \\
-Es existiert W'funktion: &\\
-$f_X:D_X\to [0,1],\ x\mapsto \P(\{X=x\})$ &        
-$\P_X$ besitzt Dichte $f_X$\\
-&\\
+
+Es existiert W'funktion: &
+						\\
+$f_X:D_X\to [0,1],\ x\mapsto \P(\{X=x\})$	&        
+$\P_X$ besitzt Dichte $f_X$				\\
+&\\ %empty row
+
 \multicolumn{2}{c}{\textit{Verteilungsfunktion} ($d=1$)}  \\
-$$\F_X(x)=\sum\limits_{y\in D_X\cap (-\infty, x]} \P(\{X=y\})$$ &
-$$\F_X(x)=\int_{(-\infty,x]}f_X(y) d\lambda(y)$$ \\
+
+$$\F_X(x)=\sum\limits_{y\in D_X\cap (-\infty, x]} \P(\{X=y\})$$ 	&
+$$\F_X(x)=\int_{(-\infty,x]}f_X(y) d\lambda(y)$$ 					\\
+
 \multicolumn{2}{c}{\textit{Verteilung}}  \\
-$$\P_X(A)=\sum\limits_{x\in D_X\cap A} \P(\{X=x\})$$ &
-$$\P_X(A)=\int_{A} f_X(x) d\lambda(x)$$ \\
+
+$$\P_X(A)=\sum\limits_{x\in D_X\cap A} \P(\{X=x\})$$	&
+$$\P_X(A)=\int_{A} f_X(x) d\lambda(x)$$ 				\\
+
 \multicolumn{2}{c}{\textit{Randverteilung/Randdichte}}\\
 \multicolumn{2}{c}{$X=(X_1\ldots,X_d)$}\\
-todo       &
+
+todo      							&
 $f_{X_i}(x)=$
 \mbox{$\int_\R\cdots\int_\R f_X(x_1,\ldots,x_{i-1},x,x_{i+1},\ldots,x_d)
-d\lambda(x_1)\cdots d\lambda_{x_d}$}\\
-&\\
-&(alles integrieren außer $i$-te Koordinate)  \\
-&\\
+d\lambda(x_1)\cdots d\lambda_{x_d}$}	\\
+&\\ %empty row
+											& 
+(alles integrieren außer $i$-te Koordinate)  	\\
+&\\ %empty row
+
 \multicolumn{2}{c}{\textit{$X_1,\ldots,X_d$ unabhängig}}\\
+
 $\forall x_1\ldots,x_n\in\R:$
-\mbox{$\P(\bigcap_{i=1}^n \{X_i=x_i\})=\prod_{i=1}^n\P(\{X_i=x_i\})$} &
+\mbox{$\P(\bigcap_{i=1}^n \{X_i=x_i\})=\prod_{i=1}^n\P(\{X_i=x_i\})$} 			&
 $\forall B_1,\ldots,B_n\in\B{1}:$
-\mbox{$\P(\bigcap_{i=1}^n \{X_i\in B_i\})=\prod_{i=1}^n\P(\{X_i\in B_i\})$} \\
-&$\Leftrightarrow$\\ 
- &
+\mbox{$\P(\bigcap_{i=1}^n \{X_i\in B_i\})=\prod_{i=1}^n\P(\{X_i\in B_i\})$}	\\
+					&
+$\Leftrightarrow$	\\
+																&
 $\forall B_1,\ldots,B_n\in\B{1}:$
-\mbox{$\P(B_1\times\cdots\times B_d)=\prod_{i=1}^d\P_{X_i}(B_i)$}\\
-&\\
-& Gemeinsame Verteilung $P_X$ von $X_1,\ldots,X_d$ ist also Produkt der
-Randverteilungen $P_{X_{i\in\{1,\ldots,d\}}}$\\
-&\\
+\mbox{$\P(B_1\times\cdots\times B_d)=\prod_{i=1}^d\P_{X_i}(B_i)$}	\\
+&\\ %empty row
+											&
+Gemeinsame Verteilung $P_X$ von $X_1,\ldots,X_d$ ist also Produkt der
+Randverteilungen $P_{X_{i\in\{1,\ldots,d\}}}$	\\
+&\\ %empty row
+
 \multicolumn{2}{c}{\textit{$X,Y$ identisch verteilt} ($d=1$)}\\
-$D_X=D_Y$ und $f_X=f_Y$ &
-$P_X=P_Y$\\
-$\forall z\in\R:\P(\{X=z\})=\P'(\{Y=z\})$&
-$\forall A\in\B{1}:\P(\{X\in A\})=\P'(\{Y\in A\})$\\
+
+$D_X=D_Y$ und $f_X=f_Y$	&
+$P_X=P_Y$				\\
+$\forall z\in\R:\P(\{X=z\})=\P'(\{Y=z\})$				&
+$\forall A\in\B{1}:\P(\{X\in A\})=\P'(\{Y\in A\})$	\\
 
 \end{tabular}
 \end{table}
-
-
-
