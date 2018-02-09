@@ -1,12 +1,12 @@
 \section{Integration}
 
-\textbf{Lesbegue-Maß} $\lambda_d: \B{d}\to [0,\infty]$
+\textbf{Lebesgue-Maß} $\lambda_d: \B{d}\to [0,\infty]$
 \begin{itemize}
 \item Für $B_1,B_2,\ldots\in\B{d}$ \underline{p.d.}:
 $\lambda_d(\bigcup_{i=1}^{\infty} B_i)=\sum_{i=1}^{\infty}\lambda_d(B_i)$.
 
-\item Für $a_1,b_1,\ldots,a_n,b_n\in\R$:
-$\lambda_d([a_1,b_1]\times\cdots\times[a_n,b_n])=\prod_{i=1}^{d}(b_i-a_i)$.
+\item Für $a_1,b_1,\ldots,a_d,b_d\in\R$:
+$\lambda_d([a_1,b_1]\times\cdots\times[a_d,b_d])=\prod_{i=1}^{d}(b_i-a_i)$.
 
 \item Für $a\in\R^d$, $Q\in\mathrm{O}(d)$, $A\in\B{d}$: 
 $\lambda_d(a+Q(A))=\lambda_d(A)$
@@ -60,7 +60,7 @@ $\int f~d\lambda_d:=\sum_{i=1}^{n} b_i\cdot\lambda_d(B_i)\in [0,\infty]$
 
 \item Lesbegue-Integral ist monoton und linear
 
-\item Für $f:\R\to\R$ Borell-messbar und beschränkt auf $[a,b]$ mit
+\item Für $f:\R\to\R$ Borel-messbar und beschränkt auf $[a,b]$ mit
 \mbox{$\lambda(\{x\in[a,b]\mid f \text{ unstetig in }x\})=0$} gilt:
 \[
 	\underbrace{\int_{a}^{b}f(x)dx}_{\text{Riemann-Integral}}
@@ -83,9 +83,9 @@ und $g\in\mathcal{F}_d$ integrierbar mit $|f_n|\leq g$ für alle $n\in\N$ gilt
 \[
 	\int fd\lambda_d=\lim_{n\to\infty} \int f_n~d\lambda_d.
 \]
-Insbesondere für $f\in\mathcal{F}_1$ integrierbar oder $f\in\mathcal{F}_1^+$
+Insbesondere für $f\in\mathcal{F}_1$ integrierbar oder $f\in\mathcal{F}_1^+$:
 \[
-	\int_\R f~d\lambda=\lim_{n\to\infty} \int_{[n,n]} f~d\lambda
+	\int_\R f~d\lambda=\lim_{n\to\infty} \int_{[n,n]} f~d\lambda.
 \]
 
 
