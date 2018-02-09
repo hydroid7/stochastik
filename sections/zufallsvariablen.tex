@@ -61,12 +61,12 @@ für $A\in\A$.
 Zu jeder Wahrscheinlichkeitsfunktion/-dichte $f$ gibt es $(\Omega,\A,\P)$ sodass
 darauf eine (diskrete/absolut stetige) Zufallsvariable $X$ mit $f_X=f$ existiert,
 daher definiert jedes Wahrscheinlichkeitsmaß $\P$ auf $\B{d}$ einen
-$d$-dimensionalen Zufallsvektor $X$ mit $\P_X=X$.
+$d$-dimensionalen Zufallsvektor $X$ mit $\P_X=\P$.
 
 \textbf{Diskrete Zufallsvariablen}\\
-Eine Zufallsvariable heißt \textit{diskret}, wenn $\P(\{X\in D\})$ für ein abzählbares
-$D\subset\R$ gilt. Das kleinste solche $D=:D_X$ heißt \textit{Träger} der
-Zufallsvariablen $X$.\\
+Eine Zufallsvariable heißt \textit{diskret}, wenn $\P(\{X\in D\})=1$
+für ein abzählbares $D\subset\R$ gilt.
+Das kleinste solche $D=:D_X$ heißt \textit{Träger} der Zufallsvariablen $X$.\\
 Es gilt: 
 $\underbrace{(\Omega,\A,\P) \text{ diskret}}_{\text{also $\Omega$ abzählbar}}$
 $\Rightarrow X(\Omega)$ abzählbar $\Rightarrow X$ diskret.
@@ -87,9 +87,11 @@ $\P_X$ eine Dichte $f_X$ besitzt.
 Eine Folge $(X_i)_{i\in I}$ von Zufallsvariablen heißt \textit{unabhängig} wenn für
 jede Folge $(J_i)_{i\in I}$ von Intervallen die Folge der Ereignisse
 $(\{X_i\in J_i\})_{i\in I}$ unabhängig ist.\\
-Wegen:\\
-$\forall x\in\R:\{X\leq x\}\in\A
-\Leftrightarrow\forall I \text{ Intervall}:\{X\in I\}\in\A$\\ \newline
+Wegen:
+\[
+	\forall x\in\R:\{X\leq x\}\in\A
+	\Leftrightarrow\forall I \text{ Intervall}:\{X\in I\}\in\A
+\]
 ist $(X_i)_{i\in I}$ genau dann unabhängig, wenn für 
 $\emptyset\neq\tilde{I}\subset I$, $(x_i)_{i\in\tilde{I}}\subset\R$ gilt:
 \[
@@ -98,7 +100,7 @@ $\emptyset\neq\tilde{I}\subset I$, $(x_i)_{i\in\tilde{I}}\subset\R$ gilt:
 Die Unabhängigkeit einer Folge $(X_i)_{i\in I}$ impliziert die paarweise
 Unabhängigkeit von $X_i,X_j$ für $i,j\in I$ mit $i\neq j$.
 
-Beachte auch \hyperlink{unabhaengig}{dieses}.
+Beachte auch (\ref{unabhaengig_e}) und (\ref{unabhaengig_kor}).
 
 Es gilt: $X,X$ unabhängig $\Leftrightarrow\exists c\in\R:\P(\{X=c\})=1$ \U
 
@@ -138,10 +140,11 @@ $$\P_X(A)=\int_{A} f_X(x) d\lambda(x)$$ 				\\
 \multicolumn{2}{c}{\textit{Randverteilung/Randdichte}}\\
 \multicolumn{2}{c}{$X=(X_1\ldots,X_d)$}\\
 
-todo      							&
+$P_{X_i}(x)=$
+\mbox{$\P(\{X_i = x\}\cap\{(X_1,\ldots,X_d)\in D_X\})$}	&
 $f_{X_i}(x)=$
 \mbox{$\int_\R\cdots\int_\R f_X(x_1,\ldots,x_{i-1},x,x_{i+1},\ldots,x_d)
-d\lambda(x_1)\cdots d\lambda_{x_d}$}	\\
+d\lambda(x_1)\cdots d\lambda_{x_d}$}						\\
 &\\ %empty row
 											& 
 (alles integrieren außer $i$-te Koordinate)  	\\
