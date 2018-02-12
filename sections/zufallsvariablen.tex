@@ -18,7 +18,7 @@ $\lim\limits_{x\to -\infty}\P(x)=0$,
 
 \textbf{Reellwertiger Zufallsvektor}\\
 $X=(X_1,\ldots,X_d):\Omega\to\R^d$ ist \textit{reellwertiger Zufallsvektor}, wenn jede
-Komponente $X_{i\in\{1,\ldots,d\}}$ reellwertige Zufallsvariable ist. Es gilt:\\
+Komponente $X_i$ reellwertige Zufallsvariable ist. Es gilt:\\
 \[
 	X \text{ ist Zufallsvektor } \Leftrightarrow X \text{ ist Borel-messbar.}
 \]
@@ -38,11 +38,10 @@ Zu einem Zufallsvektor $X=(X_1,\ldots,X_d)$ heißen ($i\in\{1,\ldots,d\}$)
 die \textit{(eindimensionalen) Randverteilungen} von $X$.
 
 \textbf{Wahrscheinlichkeitsfunktion}\\
-Eine Funktion $f:\Omega\to[0,\infty)$ heißt \textit{Wahrscheinlichkeitsfunktion} falls
+Sei $\Omega$ eine abzählbare Menge. Eine Funktion $f:\Omega\to[0,\infty)$ heißt \textit{Wahrscheinlichkeitsfunktion} falls
 \[
-	  \sum_{\omega\in\Omega} f(\omega)=1
+	  \sum_{\omega\in\Omega} f(\omega)=1.
 \]
-für ein abzählbares $\Omega\subset\R$.
 
 \textbf{Wahrscheinlichkeitsdichte}\\
 Eine Funktion $f\in\mathcal{F}_d^+$ heißt \textit{Wahrscheinlichkeitsdichte} falls
@@ -59,9 +58,7 @@ durch
 für $A\in\A$.
 
 Zu jeder Wahrscheinlichkeitsfunktion/-dichte $f$ gibt es $(\Omega,\A,\P)$ sodass
-darauf eine (diskrete/absolut stetige) Zufallsvariable $X$ mit $f_X=f$ existiert,
-daher definiert jedes Wahrscheinlichkeitsmaß $\P$ auf $\B{d}$ einen
-$d$-dimensionalen Zufallsvektor $X$ mit $\P_X=\P$.
+darauf eine (diskrete/absolut stetige) Zufallsvariable $X$ mit $f_X=f$ existiert.
 
 \textbf{Diskrete Zufallsvariablen}\\
 Eine Zufallsvariable heißt \textit{diskret}, wenn $\P(\{X\in D\})=1$
@@ -93,8 +90,8 @@ Wegen:
 	\forall x\in\R:\{X\leq x\}\in\A
 	\Leftrightarrow\forall I \text{ Intervall}:\{X\in I\}\in\A
 \]
-ist $(X_i)_{i\in I}$ genau dann unabhängig, wenn für 
-$\emptyset\neq\tilde{I}\subset I$, $(x_i)_{i\in\tilde{I}}\subset\R$ gilt:
+ist $(X_i)_{i\in I}$ genau dann unabhängig, wenn für alle endlichen Mengen
+$\emptyset\neq\tilde{I}\subset I$ und $(x_i)_{i\in\tilde{I}}\subset\R$ gilt:
 \[
 	\P(\bigcap_{i\in\tilde{I}}\{X_i\leq x_i\})=
 	\prod_{i\in\tilde{I}}\P(\{X_i\leq x_i\}).
@@ -162,7 +159,7 @@ $\forall B_1,\ldots,B_d\in\B{1}:$
 $\Leftrightarrow$	\\
 																&
 $\forall B_1,\ldots,B_d\in\B{1}:$
-\mbox{$\P(B_1\times\cdots\times B_d)=\prod_{i=1}^d\P_{X_i}(B_i)$}	\\
+\mbox{$\P_X(B_1\times\cdots\times B_d)=\prod_{i=1}^d\P_{X_i}(B_i)$}	\\
 &\\ %empty row
 											&
 Gemeinsame Verteilung $P_X$ von $X_1,\ldots,X_d$ ist also Produkt der

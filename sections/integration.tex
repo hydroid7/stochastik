@@ -5,8 +5,8 @@
 \item Für $B_1,B_2,\ldots\in\B{d}$ \underline{p.d.}:
 $\lambda_d(\bigcup_{i=1}^{\infty} B_i)=\sum_{i=1}^{\infty}\lambda_d(B_i)$.
 
-\item Für $a_1,b_1,\ldots,a_d,b_d\in\R$:
-$\lambda_d([a_1,b_1]\times\cdots\times[a_d,b_d])=\prod_{i=1}^{d}(b_i-a_i)$.
+\item Für $a_1,b_1,\ldots,a_d,b_d\in\R$ mit $a_i\leq b_i$:\quad
+\mbox{$\lambda_d([a_1,b_1]\times\cdots\times[a_d,b_d])=\prod_{i=1}^{d}(b_i-a_i).$}
 
 \item Für $a\in\R^d$, $Q\in\mathrm{O}(d)$, $A\in\B{d}$: 
 $\lambda_d(a+Q(A))=\lambda_d(A)$
@@ -63,8 +63,8 @@ $\int f~d\lambda_d:=\sum_{i=1}^{n} b_i\cdot\lambda_d(B_i)\in [0,\infty]$
 \item Für $f:\R\to\R$ Borel-messbar und beschränkt auf $[a,b]$ mit
 \mbox{$\lambda(\{x\in[a,b]\mid f \text{ unstetig in }x\})=0$} gilt:
 \[
+	\int_{[a,b]} f~d\lambda =
 	\underbrace{\int_{a}^{b}f(x)dx}_{\text{Riemann-Integral}}
-	= \int_{[a,b]} f~d\lambda
 \]
 
 \item $\forall A\in\B{d}:\int_A f~d\lambda_d = \int_A g~d\lambda_d$
@@ -99,7 +99,8 @@ $B = B_1\times\cdots\times B_d\subset\B{1}^d$ gilt
 für jede Permutation $(i_1,\ldots,i_d)$ von $(1,\ldots,d)$.
 
 \textbf{Substitutionsregel} (Riemann-Integration)\\
-Für $a,b\in\R$ mit $a<b$, $g:[a,b]\to I$ stetig diferenzierbar, $f:I\to\R$ stetig gilt
+Für $a,b\in\R$ mit $a<b$, $g:[a,b]\to I$ stetig differenzierbar, $f:I\to\R$ stetig
+gilt
 \[
 	\int_a^b f(g(y))\cdot g'(y)dy=\int_{g(a)}^{g(b)}f(x)dx.
 \]
